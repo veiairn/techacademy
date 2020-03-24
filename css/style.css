@@ -1,3 +1,50 @@
 @charset "UTF-8";
 /*** 変数 ***/
 /*** 共通部分 ***/
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header-wrap {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.main {
+  width: 77%;
+}
+
+.side {
+  width: 23%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline;
+}
+
+ul li a {
+  display: inline-block;
+  color: #009d8e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li:hover {
+  border-bottom-color: 2px solid #009d8e;
+}
