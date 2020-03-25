@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
     <link rel="stylesheet" href="/css/normalize.min.css" />
+    <link rel="stylesheet" href="/css/responsive.min.css" />
 
     <title>Tech Academy</title>
     <!-- Required meta tags -->
@@ -20,27 +21,68 @@
     />
   </head>
   <body>
-    <div id="home">
+    <div id="home" class="outer">
       <header>
-        <div class="header-wrap wrapper">
+        <div class="header-wrap inner">
           <img src="images/logo.png" alt="logo" /><a href=""></a>
         </div>
-        <div class="wrapper">
-          <nav>
-            <ul>
-              <li><a href="#">TOP</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">MAP</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <ul>
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">MAP</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
       </header>
-      <div class="main-bg"><img src="" alt="" /></div>
+      <div class="main-bg">
+        <img src="images/slide-1.png" alt="cover" />
+      </div>
       <div class="content wrapper">
-        <div class="main"></div>
-        <div class="side"></div>
+        <div class="main">
+          <h1>Tech Academyへようこそ</h1>
+          <h4>
+            Academy
+            Corporationはあなたの生活を便利にする商品やサービスの開発を日々行っています。
+            <a href="#">スタッフブログ</a>
+            では新製品の情報なども公開していますので是非ご覧ください。
+          </h4>
+          <h2>NEWS</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td><span>2016.01.15</span></td>
+                <td>お知らせ</td>
+                <td>
+                  <a href="#"
+                    >新製品「魔法の便利ハサミ」の発表イベントを開催します。</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>2016.01.10</td>
+                <td class="bt no-wrap">お知らせ</td>
+                <td>
+                  <a href="#"
+                    >沢山のご要望により「らくらく便利シャープペンシル」の新カラーバリエ
+                    ーションを追加しました。</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>2016.01.01</td>
+                <td class="no-wrap">お知らせ</td>
+                <td>
+                  <a href="#">
+                    スタッフブログにて社員の年始ご挨拶を掲載しています。</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="side"><h2>Lorem, ipsum dolor.</h2></div>
       </div>
       <footer>
         <div class="footer-wrap wrapper"></div>
