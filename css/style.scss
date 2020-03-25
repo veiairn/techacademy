@@ -13,9 +13,15 @@ a {
 img {
   max-width: 100%;
 }
-.header-wrap {
+.header-wrap,
+nav,
+.main-bg {
   text-align: center;
 }
+.main-bg {
+  background-image: url(../images/bg-cover.png);
+}
+
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
@@ -26,9 +32,6 @@ img {
 }
 .side {
   width: 23%;
-}
-nav {
-  text-align: center;
 }
 ul {
   display: inline-flex;

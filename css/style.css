@@ -10,8 +10,14 @@ img {
   max-width: 100%;
 }
 
-.header-wrap {
+.header-wrap,
+nav,
+.main-bg {
   text-align: center;
+}
+
+.main-bg {
+  background-image: url(../images/bg-cover.png);
 }
 
 .wrapper {
@@ -26,10 +32,6 @@ img {
 
 .side {
   width: 23%;
-}
-
-nav {
-  text-align: center;
 }
 
 ul {
