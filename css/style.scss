@@ -33,14 +33,35 @@ ul {
   li {
     display: inline;
     a {
+      position: relative;
       display: inline-block;
       color: $link-color;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-    }
-    &:hover {
-      border-bottom-color: 2px solid $link-color;
+      &::before,
+      &::after {
+        border-bottom: solid 2px $link-color;
+        bottom: 0;
+        content: "";
+        display: block;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        width: 0;
+      }
+      &::before {
+        left: 50%;
+      }
+      &::after {
+        right: 50%;
+      }
+
+      &:hover {
+        &::before,
+        &::after {
+          width: 20%;
+        }
+      }
     }
   }
 }
