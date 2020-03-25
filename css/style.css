@@ -3,6 +3,7 @@
 /*** 共通部分 ***/
 a {
   text-decoration: none;
+  color: #009d8e;
 }
 
 img {
@@ -30,6 +31,7 @@ img {
 nav {
   text-align: center;
 }
+
 ul {
   display: inline-flex;
   margin: 0;
@@ -37,20 +39,21 @@ ul {
   text-align: center;
   list-style: none;
 }
+
 li {
   display: inline-block;
   padding: 5px;
   display: inline;
 }
+
 a {
   display: block;
-  padding: 0 0 5px;
   position: relative;
-  text-decoration: none;
 }
+
 a::before,
 a::after {
-  border-bottom: solid 2px #f00;
+  border-bottom: solid 2px #009d8e;
   bottom: 0;
   content: "";
   display: block;
@@ -59,12 +62,15 @@ a::after {
   -webkit-transition: all 0.3s ease;
   width: 0;
 }
+
 a::before {
   left: 50%;
 }
+
 a::after {
   right: 50%;
 }
+
 a:hover::before,
 a:hover::after {
   width: 50%;

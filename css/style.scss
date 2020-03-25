@@ -8,6 +8,7 @@ $h2-color: #ffb300;
 /*** 共通部分 ***/
 a {
   text-decoration: none;
+  color: $link-color;
 }
 img {
   max-width: 100%;
@@ -26,42 +27,43 @@ img {
 .side {
   width: 23%;
 }
+nav {
+  text-align: center;
+}
 ul {
+  display: inline-flex;
   margin: 0;
   padding: 0;
   text-align: center;
-  li {
-    display: inline;
-    a {
-      position: relative;
-      display: inline-block;
-      color: $link-color;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      &::before,
-      &::after {
-        border-bottom: solid 2px $link-color;
-        bottom: 0;
-        content: "";
-        display: block;
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        width: 0;
-      }
-      &::before {
-        left: 50%;
-      }
-      &::after {
-        right: 50%;
-      }
-
-      &:hover {
-        &::before,
-        &::after {
-          width: 20%;
-        }
-      }
-    }
-  }
+  list-style: none;
+}
+li {
+  display: inline-block;
+  padding: 5px;
+  display: inline;
+}
+a {
+  display: block;
+  position: relative;
+}
+a::before,
+a::after {
+  border-bottom: solid 2px $link-color;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  width: 0;
+}
+a::before {
+  left: 50%;
+}
+a::after {
+  right: 50%;
+}
+a:hover::before,
+a:hover::after {
+  width: 50%;
 }
