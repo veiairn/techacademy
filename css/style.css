@@ -26,6 +26,11 @@ nav,
   padding: 0 4%;
 }
 
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .main {
   width: 77%;
 }
@@ -34,7 +39,7 @@ nav,
   width: 23%;
 }
 
-ul {
+nav ul {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -42,19 +47,19 @@ ul {
   list-style: none;
 }
 
-li {
+nav li {
   display: inline-block;
   padding: 5px;
   display: inline;
 }
 
-a {
+nav a {
   display: block;
   position: relative;
 }
 
-a::before,
-a::after {
+nav a::before,
+nav a::after {
   border-bottom: solid 2px #009d8e;
   bottom: 0;
   content: "";
@@ -65,15 +70,24 @@ a::after {
   width: 0;
 }
 
-a::before {
+nav a::before {
   left: 50%;
 }
 
-a::after {
+nav a::after {
   right: 50%;
 }
 
-a:hover::before,
-a:hover::after {
+nav a:hover::before,
+nav a:hover::after {
   width: 50%;
+}
+
+tr td {
+  padding: 10px 20px;
+  border-bottom: 1px solid gray;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }

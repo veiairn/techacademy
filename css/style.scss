@@ -27,46 +27,61 @@ nav,
   margin: 0 auto;
   padding: 0 4%;
 }
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+}
 .main {
   width: 77%;
 }
 .side {
   width: 23%;
 }
-ul {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
+nav {
+  ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    padding: 5px;
+    display: inline;
+  }
+  a {
+    display: block;
+    position: relative;
+  }
+  a::before,
+  a::after {
+    border-bottom: solid 2px $link-color;
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    width: 0;
+  }
+  a::before {
+    left: 50%;
+  }
+  a::after {
+    right: 50%;
+  }
+  a:hover::before,
+  a:hover::after {
+    width: 50%;
+  }
 }
-li {
-  display: inline-block;
-  padding: 5px;
-  display: inline;
+tr {
+  td {
+    padding: 10px 20px;
+    border-bottom: 1px solid gray;
+  }
 }
-a {
-  display: block;
-  position: relative;
-}
-a::before,
-a::after {
-  border-bottom: solid 2px $link-color;
-  bottom: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  width: 0;
-}
-a::before {
-  left: 50%;
-}
-a::after {
-  right: 50%;
-}
-a:hover::before,
-a:hover::after {
-  width: 50%;
+.no-wrap {
+  white-space: nowrap;
 }
