@@ -123,6 +123,16 @@ button {
   width: 20%;
   height: 50px;
 }
+.button {
+  display: inline-block;
+  text-align: center; /* 文字位置   */
+  background: $wte; /* 背景色     */
+  color: $green; /* 文字色     */
+  border: 2px solid $green; /* 枠の指定 */
+  padding: 20px 40px;
+  margin: 30px auto;
+}
+
 .wte-but {
   margin: 50px auto;
   background: #fff;
