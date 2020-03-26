@@ -1,6 +1,30 @@
 @charset "UTF-8";
 /*** 変数 ***/
 /*** 共通部分 ***/
+html,
+body {
+  height: 100%;
+}
+
+#home,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin: auto;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  /* (画像の高さ / 画像の横幅) × 100 */
+  padding-top: calc((360 / 2000) / 100);
+  background-image: url(/images/bg-footer.png);
+  background-size: cover;
+}
+
 a {
   text-decoration: none;
   color: #009d8e;
@@ -33,10 +57,15 @@ nav,
 .content {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 40px;
 }
 
 .main {
   width: 77%;
+}
+
+.main h2 {
+  color: #ffb300;
 }
 
 .side {
@@ -53,7 +82,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 5px;
+  padding: 10px 30px;
   display: inline;
 }
 
@@ -64,7 +93,7 @@ nav a {
 
 nav a::before,
 nav a::after {
-  border-bottom: solid 2px #009d8e;
+  border-bottom: solid 3px #009d8e;
   bottom: 0;
   content: "";
   display: block;
@@ -96,11 +125,26 @@ tr td {
   white-space: nowrap;
 }
 
-footer {
-  width: 100%;
-  height: auto;
-  /* (画像の高さ / 画像の横幅) × 100 */
-  padding-top: calc((360 / 2000) / 100);
-  background-image: url(/images/bg-footer.png);
-  background-size: cover;
+button {
+  width: 20%;
+  background-color: #ffb300;
+  height: 50px;
+}
+
+.gr-box,
+.f-but {
+  color: #fff;
+  text-align: center;
+  word-wrap: break-all;
+}
+
+tr .gr-box {
+  background-color: #009d8e;
+  margin: 5px;
+  padding: 10px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
 }

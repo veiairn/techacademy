@@ -3,9 +3,30 @@
 // $bg: #efebea;
 $color: #333;
 $link-color: #009d8e;
-$h2-color: #ffb300;
+$yellow: #ffb300;
 
 /*** 共通部分 ***/
+html,
+body {
+  height: 100%;
+}
+#home,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin: auto;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  /* (画像の高さ / 画像の横幅) × 100 */
+  padding-top: calc((360 / 2000) / 100);
+  background-image: url(/images/bg-footer.png);
+  background-size: cover;
+}
 a {
   text-decoration: none;
   color: $link-color;
@@ -34,9 +55,13 @@ nav,
 .content {
   display: flex;
   flex-direction: row-reverse;
+  margin-bottom: 40px;
 }
 .main {
   width: 77%;
+  h2 {
+    color: $yellow;
+  }
 }
 .side {
   width: 23%;
@@ -51,7 +76,7 @@ nav {
   }
   li {
     display: inline-block;
-    padding: 5px;
+    padding: 10px 30px;
     display: inline;
   }
   a {
@@ -60,7 +85,7 @@ nav {
   }
   a::before,
   a::after {
-    border-bottom: solid 2px $link-color;
+    border-bottom: solid 3px $link-color;
     bottom: 0;
     content: "";
     display: block;
@@ -89,13 +114,25 @@ tr {
 .no-wrap {
   white-space: nowrap;
 }
-footer {
-  width: 100%;
-  height: auto;
-  /* (画像の高さ / 画像の横幅) × 100 */
-  padding-top: calc((360 / 2000) / 100);
-  background-image: url(/images/bg-footer.png);
-  background-size: cover;
+button {
+  width: 20%;
+  background-color: $yellow;
+  height: 50px;
 }
-.footer-wrap {
+.gr-box,
+.f-but {
+  color: #fff;
+  // margin: 40px;
+  // padding: 20px;
+  text-align: center;
+  word-wrap: break-all;
+}
+tr .gr-box {
+  background-color: $link-color;
+  margin: 5px;
+  padding: 10px;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
 }
