@@ -1,9 +1,10 @@
 @charset "UTF-8";
 /*** 変数 ***/
 // $bg: #efebea;
-$color: #333;
-$link-color: #009d8e;
+$gray: #333;
+$green: #009d8e;
 $yellow: #ffb300;
+$wte: #fff;
 
 /*** 共通部分 ***/
 html,
@@ -29,14 +30,15 @@ footer {
 }
 a {
   text-decoration: none;
-  color: $link-color;
+  color: $green;
 }
 img {
   max-width: 100%;
 }
 .header-wrap,
 nav,
-.main-bg {
+.main-bg,
+.btn-wrapper {
   text-align: center;
 }
 .main-bg {
@@ -85,7 +87,7 @@ nav {
   }
   a::before,
   a::after {
-    border-bottom: solid 3px $link-color;
+    border-bottom: solid 3px $green;
     bottom: 0;
     content: "";
     display: block;
@@ -108,27 +110,32 @@ nav {
 tr {
   td {
     padding: 10px 20px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid $gray;
   }
+}
+.date {
+  color: $gray;
 }
 .no-wrap {
   white-space: nowrap;
 }
 button {
   width: 20%;
-  background-color: $yellow;
   height: 50px;
 }
-.gr-box,
-.f-but {
+.wte-but {
+  margin: 50px auto;
+  background: #fff;
+  border-color: $green;
+}
+.yel-but {
   color: #fff;
-  // margin: 40px;
-  // padding: 20px;
-  text-align: center;
+  background-color: $yellow;
   word-wrap: break-all;
 }
 tr .gr-box {
-  background-color: $link-color;
+  color: #fff;
+  background-color: $green;
   margin: 5px;
   padding: 10px;
 }

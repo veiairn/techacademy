@@ -36,7 +36,8 @@ img {
 
 .header-wrap,
 nav,
-.main-bg {
+.main-bg,
+.btn-wrapper {
   text-align: center;
 }
 
@@ -118,7 +119,11 @@ nav a:hover::after {
 
 tr td {
   padding: 10px 20px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #333;
+}
+
+.date {
+  color: #333;
 }
 
 .no-wrap {
@@ -127,18 +132,23 @@ tr td {
 
 button {
   width: 20%;
-  background-color: #ffb300;
   height: 50px;
 }
 
-.gr-box,
-.f-but {
+.wte-but {
+  margin: 50px auto;
+  background: #fff;
+  border-color: #009d8e;
+}
+
+.yel-but {
   color: #fff;
-  text-align: center;
+  background-color: #ffb300;
   word-wrap: break-all;
 }
 
 tr .gr-box {
+  color: #fff;
   background-color: #009d8e;
   margin: 5px;
   padding: 10px;
