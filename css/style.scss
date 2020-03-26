@@ -19,7 +19,11 @@ nav,
   text-align: center;
 }
 .main-bg {
+  width: 100%;
+  /* (画像の高さ / 画像の横幅) × 100 */
+  padding-top: calc((360 / 2000) / 100);
   background-image: url(../images/bg-cover.png);
+  background-size: cover;
 }
 
 .wrapper {
@@ -84,4 +88,14 @@ tr {
 }
 .no-wrap {
   white-space: nowrap;
+}
+footer {
+  width: 100%;
+  height: auto;
+  /* (画像の高さ / 画像の横幅) × 100 */
+  padding-top: calc((360 / 2000) / 100);
+  background-image: url(/images/bg-footer.png);
+  background-size: cover;
+}
+.footer-wrap {
 }
