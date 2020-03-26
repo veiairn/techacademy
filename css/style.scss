@@ -15,14 +15,12 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 footer {
-  margin: auto;
-  padding-bottom: 40px;
+  // margin: auto;
   text-align: center;
   width: 100%;
-  height: auto;
+  // height: auto;
   /* (画像の高さ / 画像の横幅) × 100 */
   padding-top: calc((360 / 2000) / 100);
   background-image: url(/images/bg-footer.png);
@@ -126,25 +124,30 @@ button {
 .button {
   display: inline-block;
   text-align: center; /* 文字位置   */
-  background: $wte; /* 背景色     */
-  color: $green; /* 文字色     */
-  border: 2px solid $green; /* 枠の指定 */
   padding: 20px 40px;
   margin: 30px auto;
 }
 
 .wte-but {
   margin: 50px auto;
-  background: #fff;
+  background: $wte;
   border-color: $green;
 }
-.yel-but {
-  color: #fff;
+.green {
+  background: $wte; /* 背景色     */
+  color: $green; /* 文字色     */
+  border: 2px solid $green; /* 枠の指定 */
+}
+.yellow,
+.gr-box,
+.copy-r {
+  color: $wte;
+}
+.yellow {
   background-color: $yellow;
   word-wrap: break-all;
 }
-tr .gr-box {
-  color: #fff;
+.gr-box {
   background-color: $green;
   margin: 5px;
   padding: 10px;
@@ -152,4 +155,7 @@ tr .gr-box {
 .flex-row {
   display: flex;
   justify-content: space-evenly;
+}
+.copy-r {
+  background: $gray;
 }

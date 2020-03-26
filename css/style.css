@@ -10,15 +10,11 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 footer {
-  margin: auto;
-  padding-bottom: 40px;
   text-align: center;
   width: 100%;
-  height: auto;
   /* (画像の高さ / 画像の横幅) × 100 */
   padding-top: calc((360 / 2000) / 100);
   background-image: url(/images/bg-footer.png);
@@ -139,12 +135,6 @@ button {
   display: inline-block;
   text-align: center;
   /* 文字位置   */
-  background: #fff;
-  /* 背景色     */
-  color: #009d8e;
-  /* 文字色     */
-  border: 2px solid #009d8e;
-  /* 枠の指定 */
   padding: 20px 40px;
   margin: 30px auto;
 }
@@ -155,14 +145,27 @@ button {
   border-color: #009d8e;
 }
 
-.yel-but {
+.green {
+  background: #fff;
+  /* 背景色     */
+  color: #009d8e;
+  /* 文字色     */
+  border: 2px solid #009d8e;
+  /* 枠の指定 */
+}
+
+.yellow,
+.gr-box,
+.copy-r {
   color: #fff;
+}
+
+.yellow {
   background-color: #ffb300;
   word-wrap: break-all;
 }
 
-tr .gr-box {
-  color: #fff;
+.gr-box {
   background-color: #009d8e;
   margin: 5px;
   padding: 10px;
@@ -171,4 +174,8 @@ tr .gr-box {
 .flex-row {
   display: flex;
   justify-content: space-evenly;
+}
+
+.copy-r {
+  background: #333;
 }
